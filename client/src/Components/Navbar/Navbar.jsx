@@ -1,6 +1,6 @@
 import  "./NavBar.css"
 
-import Logo from "../../Images/logo.png"
+import Logo from "../../Images/logoBlack.png"
 import { useState } from "react"
 
 export default function Navbar(params) {
@@ -8,7 +8,7 @@ export default function Navbar(params) {
 
     const changeNavbar = () =>{
         console.log("asd")
-        if(window.scrollY >= 200){
+        if(window.scrollY >= 650){
             setScroll(true)
         }else {
             setScroll(false)
@@ -22,12 +22,12 @@ export default function Navbar(params) {
             <div className={scroll ?'imgNav': "imgOff"}>
                     <img src={Logo} alt="logo"></img>
             </div>
-            <nav className={scroll}>
+            <nav >
                 
-                <div className={'listNav'}>
+                <div className={scroll? "listNavA" :"listNav"}>
                     <ul>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#about">Sobre Nosotros</a></li>
+                        <li><a href="#servis">Servicios</a></li>
                         <li><a href="#proyects">Mis Trabajos</a></li>
                         <li className='Contacto'><a  href="#contact">Contacto</a></li>
                     </ul>

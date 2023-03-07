@@ -1,15 +1,12 @@
-ul,li,a{
-    list-style: none;
-    text-decoration: none;
-    color: white;
-}
+
 
 .ContainerNavA{
+    transition: 1s;
     padding-left: 20px;
     padding-right: 40px;
     display: flex;
-    height: 4vw;
-    background-color: #ffffff;
+    height: 50px;
+    background-color: #fdf5f5;
     position: fixed;
     font-size: 1.5vw;  
     align-items: center;
@@ -19,9 +16,10 @@ ul,li,a{
     
 }
 .ContainerNavOff{
-    padding-left: 20px;
+    transition: 1s;
+    padding-left:20px;
     padding-right: 50px;
-    height: 4vw;
+    height: 50px;
     display: flex;
     position: fixed;
     background-color: #13131300;
@@ -42,19 +40,46 @@ ul,li,a{
     opacity: 0;
     
 }
+
 .listNav{
-    color: white;
-    font-size: 1.3vw;
+   
+    font-size: 15px;
     font-weight: 400;
-    padding-right: 80px;
-    
+    padding-right: 80px;   
 }
+.listNavA{
+    
+    font-size: 15px;
+    font-weight: 400;
+    padding-right: 80px;   
+}
+
 .listNav li {
+    list-style: none;
+   
+    display: inline-block;
+    padding: 0px 10px;
+}
+.listNav li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.listNavA li a {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+
+.listNav li :hover {
+    color:#0927EB;
+    font-weight: 400;
+    transition: 0.3s;
+}
+.listNavA li {
     display: inline-block;
     padding: 0px 10px;
 }
 
-.listNav li :hover {
+.listNavA li :hover {
     color:#0927EB;
     font-weight: 400;
     transition: 0.3s;

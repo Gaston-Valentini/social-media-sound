@@ -4,7 +4,7 @@ import logo from "../../Images/logo.png"
 
 export default function Header(params) {
     return (
-        <div className={style.header}>
+        <div id="#servis" className={style.header}>
             <div className={style.headerData}>
                 <div className={style.headerDataImageContainer}>
                     <img src={logo} alt={"logo"} className={style.headerDataImage}></img>
