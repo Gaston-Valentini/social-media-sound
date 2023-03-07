@@ -4,6 +4,7 @@ import image1 from "../../Images/header.png"
 import image2 from "../../Images/headerMic1.png"
 import image3 from "../../Images/headerMic2.png"
 
+
 export default function About() {
     return (
         <div className={style.about}>
@@ -34,6 +35,7 @@ export default function About() {
                 </div>
                 <div className={style.aboutCardsCard}>
                     <div className={style.aboutCardsCardImage}>
+                       
                         <img src={image3} alt={"image3"}></img>
                     </div>
                     <div className={style.aboutCardsCardData}>
