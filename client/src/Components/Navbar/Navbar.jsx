@@ -7,8 +7,8 @@ export default function Navbar(params) {
     const [scroll,setScroll] = useState(false)
 
     const changeNavbar = () =>{
-        console.log("hhola")
-        if(window.scrollY >= 80){
+        console.log("asd")
+        if(window.scrollY >= 200){
             setScroll(true)
         }else {
             setScroll(false)
@@ -29,7 +29,7 @@ export default function Navbar(params) {
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">Sobre Nosotros</a></li>
                         <li><a href="#proyects">Mis Trabajos</a></li>
-                        <li><a className='Contacto' href="#contact">Contacto</a></li>
+                        <li className='Contacto'><a  href="#contact">Contacto</a></li>
                     </ul>
                 </div>
             
