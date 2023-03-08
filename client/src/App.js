@@ -5,6 +5,7 @@ import Header from "./Components/Header/Header"
 import About from "./Components/About/About"
 import Footer from "./Components/Footer/Footer"
 import PoliticsPriv from "./Components/Pollitics/PoliticsPriv"
+import { PoliticsCookies } from "./Components/Pollitics/PoliticsCookies"
 
 export default function App(params) {
     return (
@@ -14,6 +15,7 @@ export default function App(params) {
             <About/>
             <Footer/>
             {/* <PoliticsPriv></PoliticsPriv> */}
+            <PoliticsCookies></PoliticsCookies>
         </div>
     )
 }
