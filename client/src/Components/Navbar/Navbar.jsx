@@ -27,9 +27,9 @@ export default function Navbar(params) {
                 <div className={scroll? "listNavA" :"listNav"}>
                     <ul>
                         <li><Link to="header" spy={true} smooth={true} offset={50} duration={500} >Home</Link></li>
-                        <li><Link to="services" spy={true} smooth={true} offset={50} duration={500} >Sobre Nosotros</Link></li>
+                        <li><Link to="services" spy={true} smooth={true} offset={50} duration={500} >Servicios</Link></li>
                         <li><Link to="proyects" spy={true} smooth={true} offset={50} duration={500} >Home</Link></li>
-                        <li><Link to="contact" spy={true} smooth={true} offset={50} duration={500} >Home</Link></li>
+                        <li><Link to="contact" spy={true} smooth={true} offset={50} duration={500} >Contacto</Link></li>
                     </ul>
                 </div>
             
