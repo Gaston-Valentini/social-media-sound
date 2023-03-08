@@ -4,10 +4,11 @@ import image1 from "../../Images/header.png"
 import image2 from "../../Images/headerMic1.png"
 import image3 from "../../Images/headerMic2.png"
 
+
 export default function About() {
 
     return (
-        <div className="about">
+        <div id ="services" className="about">
             <div className="aboutContainer">
                 <ul className="aboutContainerSlider">
                     <li className="aboutContainerSliderSlide" id="slide1">

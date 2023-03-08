@@ -1,9 +1,8 @@
 
-
 .ContainerNavA{
     transition: 1s;
     padding-left: 20px;
-    padding-right: 40px;
+    padding-right: 50px;
     display: flex;
     height: 50px;
     background-color: #fdf5f5;
@@ -12,6 +11,7 @@
     align-items: center;
     width: 100%;
     justify-content: space-between;
+    z-index: 1;
    
     
 }
@@ -48,15 +48,15 @@
     padding-right: 80px;   
 }
 .listNavA{
-    
+    cursor: pointer;
     font-size: 15px;
     font-weight: 400;
     padding-right: 80px;   
 }
 
 .listNav li {
+    cursor: pointer;
     list-style: none;
-   
     display: inline-block;
     padding: 0px 10px;
 }
@@ -106,14 +106,43 @@
         padding-right: 0px;
         font-size: 15px;
     }
-
+  
 }
 
 @media(max-width: 550px){
     .ContainerNavA{
+        
+        padding-left: 0px;
+        padding-right: 0px;
+        justify-content: center;
+    }
+    .ContainerNavOff{   
+        padding-left: 0px;
+        padding-right: 0px;
+        justify-content: center;
+    }
+    .listNav{
+        padding-right: 0;
+        padding-left: 0;
+        font-size: 15px;
+        
+    }
+    .listNavA{
+        padding-right: 0;
+        padding-left: 0;
+        font-size: 15px;
+    }
+    .listNavA ul{
+        padding-left: 0;   
+    }
+
+    .listNav ul{
+        padding-left: 0; 
+    }
+    .imgNav img{
         display: none;
     }
-    .ContainerNavOff{
+    .imgOff img{
         display: none;
     }
 }
