@@ -1,0 +1,111 @@
+.about{
+    padding: 150px 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(25, 25, 25);
+    box-shadow: 0 0 7px rgb(0, 0, 0, 0.8);
+}
+
+.aboutContainer{
+    height: 800px;
+    width: 90%;
+    max-width: 1200px;
+    background-color: rgb(255, 255, 255);
+}
+
+ul, li{
+    padding: 0;
+    list-style: none;
+}
+
+.aboutContainerSlider{
+    height: 700px;
+}
+
+.aboutContainerSliderSlide{
+    position: absolute;
+    height: 700px;
+    width: 90%;
+    max-width: 1200px;
+    opacity: 0;
+    box-shadow: 5px 5px 15px rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.aboutContainerSliderSlide:first-child{
+    opacity: 1;
+}
+
+.aboutContainerSliderSlide:target{
+    opacity: 1;
+}
+
+.aboutContainerSliderSlideImage{
+    height: 70%;
+}
+
+.aboutContainerSliderSlideImage img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.aboutContainerSliderSlideData{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    padding: 0 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.aboutContainerSliderSlideDataTitle{
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.aboutContainerSliderSlideDataSubtitle{
+    margin: 20px 0;
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+.aboutContainerSliderSlideDataPrice{
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 50px;
+    background-color: #FE4A49;
+    color: rgb(0, 0, 0);
+}
+
+.aboutContainerSliderSlideDataPrice:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.aboutContainerNavbar{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(25, 25, 25);
+}
+
+.aboutContainerNavbarLink a{
+    margin: 0 20px;
+    padding: 1px 9px;
+    border-radius: 50px;
+    background-color: #FE4A49;
+    color: rgb(255, 255, 255, 0);
+    box-shadow: 3px 3px 7px rgb(0, 0, 0);
+}
+
+@media(max-width: 1100px){
+    
+}
