@@ -13,15 +13,17 @@ export default function Portafolio(){
                     <img  className="imgA" alt="mic" src={imgAuris}></img>
                         
                     </div>
-
+                    <div className="AudiosC">
+                          
                     <div className="countainer2">
-                         <div className="Title">
+                       <div className="Title">
   
-                                    <div className="NameContainer">
-                                    <h2>Nuestras Mejoras</h2>   
+                                    <div>
+                                    <h2>Trabajos Recientes</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repellat eum dolore, sint nemo harum fuga autem expedita, ea velit modi voluptas est. Fugit officiis nulla exercitationem eius aliquid labore.</p>   
                                     </div>
                                    
-                        </div>
+                            </div>
                         <div className="slides">
   
                                     <div className="NameContainer">
@@ -59,7 +61,7 @@ export default function Portafolio(){
                                     </div>
                         </div>
                     </div>
-
+                    </div>
                     <div className="countainer3">
                     <img alt="mic" src={imgMic}></img>
                     </div>

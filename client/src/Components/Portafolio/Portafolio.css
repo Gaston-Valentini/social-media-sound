@@ -7,13 +7,24 @@
     justify-content: center;
     align-items: center;
     height: 450px;
-    background-color: rgb(255, 255, 255)
+    background-color: rgb(255, 255, 255);
+    transition: 0.3s;
 }
 .div .countainer3 img{
     margin-top: 0px;
     width: 300px;
    transition: 0.3s;
 }
+.div .countainer2 {
+   margin-left: 40px;
+   margin-right: 40px;
+
+}
+.slides{
+    display: flex;
+    justify-content: center;
+}
+
 .div .countainer1 img{
     margin-top: 0px;
     width: 550px;
@@ -23,25 +34,66 @@
 .NameContainer{
     display: inline-block;
     margin-right: 50px;
+    margin-bottom: 0;
 }
 .AudioContainer{
     margin-left: 50px;
     display: inline-block;
 }
+.Title h2{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.Title p{
+    margin-bottom: 30px;
+}
 
 @media (max-width: 1450px) {
+    .div{
+        height: 350px;
+    }
     .div .countainer3 img{
         margin-top: 0px;
-        width: 250px;
+        width: 230px;
         transition: 0.3s;
     }
     .div .countainer1 img{
         margin-top: 0px;
-        width: 450px; 
+        width: 420px; 
         transition: 0.3s;
     } 
     .NameContainer{
         font-size: 15px;
+        margin-right: 0px;
+    }
+    
+}
+
+@media(max-width: 1250px){
+    .Title h2{
+        margin-bottom: 15px;
+        font-size: 17px;
+    }
+    .Title p{
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .div{
+        height: 350px;
+    }
+    .div .countainer3 img{
+        margin-top: 0px;
+        width: 200px;
+        transition: 0.3s;
+    }
+    .div .countainer1 img{
+        margin-top: 0px;
+        width: 390px; 
+        transition: 0.3s;
+    } 
+    .NameContainer{
+        font-size: 12px;
         margin-right: 0px;
     }
 }
