@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import Footer from "../Footer/Footer"
-import Navbar from "../Navbar/Navbar"
+
 import styles from "./PoliticsPriv.module.css"
 
 

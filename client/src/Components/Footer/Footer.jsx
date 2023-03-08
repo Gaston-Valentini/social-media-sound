@@ -12,7 +12,7 @@ export default function Footer(){
                 
                 <div className={styles.row}>
                     <div className={styles.img}>
-                        <img src={logo}></img> 
+                        <img alt="logo"src={logo}></img> 
                     </div>
                     <hr></hr>
                    
@@ -28,18 +28,18 @@ export default function Footer(){
                     <div className={styles.footer_col}>
                         <h4>Contacto</h4>
                         <ul>
-                            <li><a>socialmediasound.com</a></li>
-                            <li><a>633 848 863</a></li>
-                            <li><a>info@socialmediasound.es</a></li>
+                            <li><p>socialmediasound.com</p></li>
+                            <li><p>633 848 863</p></li>
+                            <li><p>info@socialmediasound.es</p></li>
                         </ul>
                     </div>
                     <hr></hr>
                     <div className={styles.footer_col}>
                         <h4>Redes</h4>
                         <div className={styles.social}>
-                        <a><AiFillInstagram /></a>
-                        <a><AiFillFacebook/></a>
-                        <a><AiFillMail/></a>
+                        <p><AiFillInstagram /></p>
+                        <p><AiFillFacebook/></p>
+                        <p><AiFillMail/></p>
                         </div>
                     </div>
                 
