@@ -7,7 +7,7 @@ import image3 from "../../Images/headerMic2.png"
 
 export default function About() {
     return (
-        <div className={style.about}>
+        <div id="services"className={style.about}>
             <div className={style.aboutTitles}>
                 <p className={style.aboutTitlesTitle}>Qué hacemos?</p>
                 <p className={style.aboutTitlesSubtitle}>Servicios</p>

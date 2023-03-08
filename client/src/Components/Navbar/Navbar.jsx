@@ -1,5 +1,5 @@
 import  "./NavBar.css"
-
+import {Link} from 'react-scroll'
 import Logo from "../../Images/logoBlack.png"
 import { useState } from "react"
 
@@ -7,7 +7,7 @@ export default function Navbar(params) {
     const [scroll,setScroll] = useState(false)
 
     const changeNavbar = () =>{
-        console.log("asd")
+        
         if(window.scrollY >= 650){
             setScroll(true)
         }else {
@@ -26,10 +26,10 @@ export default function Navbar(params) {
                 
                 <div className={scroll? "listNavA" :"listNav"}>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#servis">Servicios</a></li>
-                        <li><a href="#proyects">Mis Trabajos</a></li>
-                        <li className='Contacto'><a  href="#contact">Contacto</a></li>
+                        <li><Link to="header" spy={true} smooth={true} offset={50} duration={500} >Home</Link></li>
+                        <li><Link to="services" spy={true} smooth={true} offset={50} duration={500} >Sobre Nosotros</Link></li>
+                        <li><Link to="proyects" spy={true} smooth={true} offset={50} duration={500} >Home</Link></li>
+                        <li><Link to="contact" spy={true} smooth={true} offset={50} duration={500} >Home</Link></li>
                     </ul>
                 </div>
             
