@@ -9,8 +9,8 @@ export default function Header(params) {
                 <div className={style.headerDataImageContainer}>
                     <img src={logo} alt={"logo"} className={style.headerDataImage}></img>
                 </div>
-                <p className={style.headerDataText}>Música hecha a tu medida con los mejores profesionales</p>
-                <button className={style.headerDataButton}>Comenzemos!</button>
+                <p className={style.headerDataText}>Muéstranos tu video y dinos cómo te gustaría que suene</p>
+                <button className={style.headerDataButton}>Mejorar mi audio!</button>
             </div>
         </div>
     )

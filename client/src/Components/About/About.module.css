@@ -1,100 +1,50 @@
 .about{
-    padding: 150px;
+    padding: 150px 0;
+    display: flex;
+    justify-content: center;
     background-color: rgb(25, 25, 25);
 }
 
-.aboutTitles{
-    text-align: center;
+.aboutContainer{
+    width: 80%;
+    height: 800px;
+    padding: 40px;
+    background-color: rgb(255, 255, 255);
 }
 
-.aboutTitlesTitle{
-    font-size: 20px;
-    font-weight: 100;
-    color: #FE4A49;
+ul, li{
+    padding: 0;
+    list-style: none;
 }
 
-.aboutTitlesSubtitle{
-    margin-bottom: 50px;
-    font-size: 30px;
-    font-weight: 800;
-    color: rgb(255, 255, 255);
+.aboutContainerSlider{
+    position: relative;
+    width: 100%;
+    height: 70%;
 }
 
-.aboutCards{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 30px;
+.aboutContainerSliderSlide{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
 }
 
-.aboutCardsCard{
-    height: 600px;
-    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+.aboutContainerSliderSlide:first-child{
+    opacity: 1;
 }
 
-.aboutCardsCardImage{
-    height: 60%;
+.aboutContainerSliderSlide:target{
+    opacity: 1;
 }
 
-.aboutCardsCardImage img{
+.aboutContainerSliderSlide img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.aboutCardsCardData{
-    height: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(255, 255, 255);
-}
-
-.aboutCardsCardDataTitle{
-    font-size: 20px;
-    font-weight: 800;
-}
-
-.aboutCardsCardDataSubtitle{
-    max-width: 80%;
-    margin: 20px 0;
-    text-align: center;
-    font-size: 15px;
-    font-weight: 100;
-}
-
-.aboutCardsCardDataButton{
-    font-size: 15px;
-    padding: 15px;
-    border: none;
-    border-radius: 50px;
-    background-color: #FE4A49;
-}
-.aboutCardsCardDataButton:hover{
-    cursor: pointer;
-    background-color: rgb(25, 25, 25);
-    color: rgb(255, 255, 255);
-    transition: 0.3s;
-}
-
-@media(max-width: 1410px){
-    .aboutCards{
-        grid-template-columns: 1fr;
-    }
-}
-
-@media(max-width: 1100px){
-    .about{
-        padding: 40px;
-    }
-    .aboutCardsCard{
-        height: auto;
-    }
-    .aboutCardsCardImage{
-        height: auto;
-    }
-    .aboutCardsCardData{
-        height: auto;
-        padding: 40px 0;
-    }
+.aboutContainerNavbar{
+    background-color: rebeccapurple;
+    height: 30%;
 }
