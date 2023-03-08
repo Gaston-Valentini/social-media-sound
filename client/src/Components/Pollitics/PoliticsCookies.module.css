@@ -3,6 +3,21 @@
     width:100%;
     
 }
+.container button{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: #FE4A49;
+    position: fixed;
+}
+.container button:hover{
+    cursor: pointer;
+    background-color: rgb(25, 25, 25);
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
 .text{
     max-width: 70vw;
    color: rgba(216, 214, 214, 0.822);

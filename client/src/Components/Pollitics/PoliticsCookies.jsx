@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+import Footer from "../Footer/Footer"
 import styles from "./PoliticsCookies.module.css"
 
 
@@ -6,6 +8,7 @@ export function PoliticsCookies(){
     return(
 
         <div className={styles.container}>
+            <Link to="/"><button>Volver</button></Link>
                 <div className={styles.text}>
                    
                    
@@ -47,6 +50,7 @@ export function PoliticsCookies(){
                     
                     
                 </div>
+                <Footer/>
         </div>
 
 

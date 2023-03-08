@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom"
+import Footer from "../Footer/Footer"
+import Navbar from "../Navbar/Navbar"
 import styles from "./PoliticsPriv.module.css"
 
 
@@ -6,7 +9,9 @@ export default function PoliticsPriv(){
     return(
 
             <>
+            
               <div className={styles.container}>
+              <Link to="/"><button>Volver</button></Link>
                 <div className={styles.text}>
                     <h2>POLÍTICA DE PRIVACIDAD</h2>
                         <p>Respetando lo establecido en la legislación vigente, https://socialmediasound.com/ (en adelante, también Sitio Web) se compromete a adoptar las medidas técnicas y organizativas necesarias, según el nivel de seguridad adecuado al riesgo de los datos recogidos. 
@@ -127,6 +132,7 @@ export default function PoliticsPriv(){
                         </p>
                         </div>
                     </div>
+                    <Footer/>
               </div>
             </>
 

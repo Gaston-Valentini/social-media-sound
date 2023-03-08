@@ -1,6 +1,7 @@
 import styles from "./Footer.module.css"
 import {AiFillInstagram , AiFillFacebook, AiFillMail} from "react-icons/ai"
 import logo from '../../Images/logo.png'
+import { Link } from "react-router-dom";
 
 export default function Footer(){
     function copiarAlPortapapeles(id_elemento) {
@@ -38,8 +39,8 @@ export default function Footer(){
                     <div className={styles.footer_col}>
                         <h4>Politicas</h4>
                         <ul>
-                            <li><a>Politicas de Privacidad </a></li>
-                            <li><a>Politicas de Cookies</a></li>
+                            <li><Link to="/PoliticsPriv">Politicas de Privacidad </Link></li>
+                            <li><Link to="/PoliticsCookies">Politicas de Cookies </Link></li>
                            
                         </ul>
                     </div>
