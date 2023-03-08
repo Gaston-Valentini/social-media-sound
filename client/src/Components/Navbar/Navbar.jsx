@@ -1,4 +1,4 @@
-import  "./NavBar.css"
+import  "./Navbar.css"
 import {Link} from 'react-scroll'
 import Logo from "../../Images/logoBlack.png"
 import { useState } from "react"

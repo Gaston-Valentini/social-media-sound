@@ -5,7 +5,7 @@
     padding-right: 50px;
     display: flex;
     height: 50px;
-    background-color: #fdf5f5;
+    background-color: #ffffff;
     position: fixed;
     font-size: 1.5vw;  
     align-items: center;
@@ -22,7 +22,7 @@
     height: 50px;
     display: flex;
     position: fixed;
-    background-color: #13131300;
+    background-color: #c2c2c200;
     width: 100%;
     font-size: 1.5vw;  
     align-items: center;

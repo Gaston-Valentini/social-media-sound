@@ -6,9 +6,12 @@ import image3 from "../../Images/headerMic2.png"
 
 
 export default function About() {
-
     return (
         <div id ="services" className="about">
+            <div className="aboutTitles">
+                <p className="aboutTitlesTitle">Servicios</p>
+                <p className="aboutTitlesSubtitle">Qué hacemos?</p>
+            </div>
             <div className="aboutContainer">
                 <ul className="aboutContainerSlider">
                     <li className="aboutContainerSliderSlide" id="slide1">
@@ -37,9 +40,9 @@ export default function About() {
                     </li>
                 </ul>
                 <ul className="aboutContainerNavbar">
-                    <li className="aboutContainerNavbarLink"><a href="#slide1">.</a></li>
-                    <li className="aboutContainerNavbarLink"><a href="#slide2">.</a></li>
-                    <li className="aboutContainerNavbarLink"><a href="#slide3">.</a></li>
+                    <li className="aboutContainerNavbarLink"><a href="#slide1">A</a></li>
+                    <li className="aboutContainerNavbarLink"><a href="#slide2">B</a></li>
+                    <li className="aboutContainerNavbarLink"><a href="#slide3">C</a></li>
                 </ul>
             </div>
         </div>
