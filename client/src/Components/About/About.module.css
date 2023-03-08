@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     background-color: rgb(25, 25, 25);
+    box-shadow: 0 0 7px rgb(0, 0, 0, 0.8);
 }
 
 .aboutContainer{
