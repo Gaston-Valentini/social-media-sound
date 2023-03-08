@@ -1,28 +1,23 @@
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(255, 255, 255);
+.containerPort{
+    height: 800px;
+    background-color:rgb(25, 25, 25) ;
 }
 .div{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 450px;
-    background-color: rgb(255, 255, 255);
-}
-.div .container2{
-
+    background-color: rgb(255, 255, 255)
 }
 .div .countainer3 img{
     margin-top: 0px;
     width: 300px;
-   
+   transition: 0.3s;
 }
 .div .countainer1 img{
     margin-top: 0px;
     width: 550px;
-    
+    transition: 0.3s;
 }
 
 .NameContainer{
@@ -35,5 +30,18 @@
 }
 
 @media (max-width: 1450px) {
-    
+    .div .countainer3 img{
+        margin-top: 0px;
+        width: 250px;
+        transition: 0.3s;
+    }
+    .div .countainer1 img{
+        margin-top: 0px;
+        width: 450px; 
+        transition: 0.3s;
+    } 
+    .NameContainer{
+        font-size: 15px;
+        margin-right: 0px;
+    }
 }
