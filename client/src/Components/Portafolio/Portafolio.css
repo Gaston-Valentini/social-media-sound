@@ -16,11 +16,7 @@
     width: 300px;
    transition: 0.3s;
 }
-.div .countainer2 {
-   margin-left: 40px;
-   margin-right: 40px;
 
-}
 .slides{
     display: flex;
     justify-content: center;

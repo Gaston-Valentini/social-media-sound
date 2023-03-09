@@ -33,7 +33,7 @@
 
 .form{
     padding: 40px;
-    width: 80%;
+    width: 60%;
     max-width: 800px;
     display: flex;
     flex-direction: column;
@@ -41,6 +41,8 @@
 }
 
 .formZone{
+    display: flex;
+    flex-direction: column;
     margin: 10px 0;
 }
 
