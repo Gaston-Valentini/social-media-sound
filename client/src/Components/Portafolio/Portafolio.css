@@ -146,6 +146,10 @@
 }
 
 @media (max-width: 560px){
+    
+    .slides audio{
+        width: 200px;
+    }
     .div .countainer3 img{
        display: none;
     }
@@ -154,8 +158,13 @@
     } 
     .AudioContainer{
         margin-left: 0px;
-        margin-right: 0px;
-        
+        margin-right: 0px;    
+    }
+    .portTitles p{
+        font-size: 15px;
+    }
+    .portTitles h2{
+        font-size: 20px;
     }
     .slides{
         display: grid;
@@ -166,6 +175,12 @@
    
     .div{
         height: 500px
+    }
+    .Title{
+       
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
     }
  
 }
