@@ -7,7 +7,7 @@ import Test from "../../Audios/test.mp3"
 
 export default function Portafolio(){
     return(
-            <div id="proyects" className="containerPort">
+            <div className="containerPort">
                             <div className="portTitles">
                                     <p>Trabajos</p>   
                                     <h2>Este es mi Portafolio</h2>

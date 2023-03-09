@@ -64,7 +64,7 @@ export default function About() {
                 <BsFillArrowLeftCircleFill className="aboutNavbarButton" onClick={onLeft}/>
                 <BsFillArrowRightCircleFill className="aboutNavbarButton" onClick={onRight}/>
             </div>
-            
+            <div id="proyects"></div>
         </div>
     )
 }
