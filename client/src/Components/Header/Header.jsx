@@ -10,6 +10,7 @@ export default function Header(params) {
                     <img src={logo} alt={"logo"} className={style.headerDataImage}></img>
                 </div>
                 <p className={style.headerDataText}>Muéstranos tu video y dinos cómo te gustaría que suene</p>
+                <p className={style.headerDataInfo}>Pide presupuesto sin compromiso, no vas a encontrar un precio mejor. Además, si nos gusta tu proyecto lo hacemos gratis, porque nos gusta participar y ayudar a que los buenos proyectos vean la luz.</p>
                 <button className={style.headerDataButton}>Mejorar mi audio!</button>
             </div>
         </div>
