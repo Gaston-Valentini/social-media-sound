@@ -27,7 +27,8 @@
 
 .div .countainer1 img{
     margin-top: 0px;
-    width: 550px;
+    
+    width: 500px;
     transition: 0.3s;
 }
 
@@ -41,10 +42,26 @@
     display: inline-block;
 }
 .Title h2{
+    color:#0927EB ;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
 }
+
+.slides audio::-webkit-media-controls-panel{
+   
+}
+.slides audio::-webkit-media-controls-play-button{
+    background-color:#FE4A49;
+    border-radius: 50px;
+}
+.slides audio::-webkit-media-controls-timeline{
+    
+    color:#FE4A49;
+    
+}
+
+
 .Title p{
     margin-bottom: 30px;
 }
@@ -96,4 +113,37 @@
         font-size: 12px;
         margin-right: 0px;
     }
+}
+@media (max-width: 1160px){
+    .div .countainer3 img{
+       display: none;
+    }
+    .div .countainer1 img{
+        display: none;
+    } 
+}
+
+@media (max-width: 560px){
+    .div .countainer3 img{
+       display: none;
+    }
+    .div .countainer1 img{
+        display: none;
+    } 
+    .AudioContainer{
+        margin-left: 0px;
+        margin-right: 0px;
+        
+    }
+    .slides{
+        display: grid;
+    }
+    .NameContainer{
+        text-align: center;
+    }
+   
+    .div{
+        height: 500px
+    }
+ 
 }
