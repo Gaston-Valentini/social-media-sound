@@ -47,7 +47,7 @@ export default function About() {
     }
 
     return (
-        <div className="about">
+        <div id="services" className="about">
             <div className="titles">
                 <p className="titlesTitle">Formulario</p>
                 <p className="titlesSubtitle">Háblanos de tu video</p>

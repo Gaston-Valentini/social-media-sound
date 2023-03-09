@@ -34,7 +34,7 @@
 .aboutSlider{
     width: 80%;
     max-width: 1000px;
-    height: 800px;
+    height: 650px;
     box-shadow: 3px 3px 7px rgb(0, 0, 0);
 }
 
@@ -104,6 +104,6 @@
 
 @media(max-width: 550px){
     .aboutSlider{
-        height: 600px;
+        height: 550px;
     }
 }
