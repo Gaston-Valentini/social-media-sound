@@ -7,7 +7,7 @@ import Test from "../../Audios/test.mp3"
 
 export default function Portafolio(){
     return(
-            <div className="containerPort">
+            <div  className="containerPort">
                 <div className="div">
                     <div className="countainer1">
                     <img  className="imgA" alt="mic" src={imgAuris}></img>
@@ -66,7 +66,7 @@ export default function Portafolio(){
                     <img alt="mic" src={imgMic}></img>
                     </div>
                 </div>
-
+                
             </div>
     )
 }

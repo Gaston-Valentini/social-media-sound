@@ -39,12 +39,14 @@ export default function About() {
                         </div>
                     </li>
                 </ul>
+                <div id="proyects"></div>
                 <ul className="aboutContainerNavbar">
                     <li className="aboutContainerNavbarLink"><a href="#slide1">A</a></li>
                     <li className="aboutContainerNavbarLink"><a href="#slide2">B</a></li>
                     <li className="aboutContainerNavbarLink"><a href="#slide3">C</a></li>
                 </ul>
             </div>
+            
         </div>
     )
 }
