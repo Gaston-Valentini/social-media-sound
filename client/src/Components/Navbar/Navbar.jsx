@@ -1,6 +1,6 @@
 import  "./NavBar.css"
 import {Link} from 'react-scroll'
-import Logo from "../../Images/logoBlack.png"
+import Logo from "../../Images/logo.png"
 import { useState } from "react"
 
 export default function Navbar(params) {
@@ -26,7 +26,7 @@ export default function Navbar(params) {
                 
                 <div className={scroll? "listNavA" :"listNav"}>
                     <ul>
-                        <li><Link to="header" spy={true} smooth={true} offset={50} duration={500} >Home</Link></li>
+                        <li><Link to="header" spy={true} smooth={true} offset={50} duration={500} ><a>Home</a></Link></li>
                         <li><Link to="services" spy={true} smooth={true} offset={50} duration={500} >Servicios</Link></li>
                         <li><Link to="proyects" spy={true} smooth={true} offset={50} duration={500} >Trabajos</Link></li>
                         <li><Link to="contact" spy={true} smooth={true} offset={50} duration={500} >Contacto</Link></li>
