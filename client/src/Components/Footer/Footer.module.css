@@ -110,6 +110,7 @@ width: 20%;
 
 @media(max-width: 760px){
     .img img{
+        width: 0;
        display: none;
     }
     .row hr{
@@ -131,6 +132,17 @@ width: 20%;
         height: 25px;
         margin-right: 7px;
     }
+    .row{
+       margin-right: 20px;
+       
+    }
+    .footer_col ul li p{
+        font-size: 10px; 
+    }
+    .footer_col ul li a{
+        font-size: 10px;
+    }
+    
 }
 
 

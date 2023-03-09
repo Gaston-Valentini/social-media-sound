@@ -7,7 +7,7 @@ import Test from "../../Audios/test.mp3"
 
 export default function Portafolio(){
     return(
-            <div id="proyects" className="containerPort">
+            <div className="containerPort">
                             <div className="portTitles">
                                     <p>Trabajos</p>   
                                     <h2>Este es mi Portafolio</h2>
@@ -24,8 +24,8 @@ export default function Portafolio(){
                        <div className="Title">
   
                                     <div>
-                                    <h3>Trabajos Recientes</h3>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repellat eum dolore, sint nemo harum fuga autem expedita, ea velit modi voluptas est. Fugit officiis nulla exercitationem eius aliquid labore.</p>   
+                                    <h3>¡EL 50% DE TU VIDEO ES EL AUDIO!</h3>
+                                    <p>El audio malo genera rechazo: Música inadecuada, volumen demasiado bajo o alto, narración tapada por la música de fondo, sin fade out, cortes de sonido, ruidos, ambiente fuerte, saturaciones... Todo esto hace que tu video no sea agradable al oido, que no se reproduzca por completo y te hace perder audiencia.</p>   
                                     </div>
                                    
                             </div>

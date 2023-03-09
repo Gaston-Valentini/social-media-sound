@@ -12,9 +12,6 @@
     width: 100%;
     justify-content: space-between;
     z-index: 1;
-  
-   
-    
 }
 .ContainerNavOff{
     transition: 1s;
@@ -125,16 +122,30 @@
         padding-right: 0px;
         justify-content: center;
     }
-    .listNav{
+    .listNav li{
         padding-right: 0;
         padding-left: 0;
-        font-size: 15px;
+        margin: 0 5px;
+        font-size: 12px;
         
+    }
+    .listNav{
+        padding-right: 0;
     }
     .listNavA{
         padding-right: 0;
+    }
+    .listNavA li{
+        padding-right: 0;
         padding-left: 0;
-        font-size: 15px;
+        margin: 0 5px;
+        font-size: 14px;
+    }
+    .listNav li{
+        padding-right: 0;
+        padding-left: 0;
+        margin: 0 5px;
+        font-size: 14px;
     }
     .listNavA ul{
         padding-left: 0;   
