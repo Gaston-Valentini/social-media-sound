@@ -134,8 +134,12 @@
     }
 }
 @media (max-width: 1160px){
-    .Title h3{
-        justify-content: center;
+    .Title {
+        
+        text-align: center;
+    }
+    .Title {
+        margin: 0  50px;
     }
     .div .countainer3 img{
        display: none;
