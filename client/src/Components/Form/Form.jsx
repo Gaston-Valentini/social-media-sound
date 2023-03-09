@@ -3,6 +3,7 @@ import "./Form.css"
 export default function Form() {
     return(
         <div className="container">
+            <div id="contact"></div>
             <div className="titles">
                 <p className="titlesTitle">Formulario</p>
                 <p className="titlesSubtitle">Háblanos de tu video</p>
@@ -20,6 +21,7 @@ export default function Form() {
                     <p className="formZoneTitle">Email</p>
                     <input type={"string"} className={"formZoneInput"}></input>
                 </div>
+                
                 <div className="formZone">
                     <p className="formZoneTitle">Teléfono</p>
                     <input type={"string"} className={"formZoneInput"}></input>
@@ -42,6 +44,7 @@ export default function Form() {
                 </div>
                 <button type={"submit"} className={"formSubmit"}>Enviar</button>
             </form>
+            
         </div>
     )
 }

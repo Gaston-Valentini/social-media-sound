@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function Footer(){
 
     return(
-        <footer id="contact"className={styles.footer}>
+        <footer className={styles.footer}>
            
             <div className={styles.container}>
                 

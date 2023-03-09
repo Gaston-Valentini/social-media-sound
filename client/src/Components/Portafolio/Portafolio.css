@@ -1,13 +1,15 @@
 .containerPort{
-    height: 800px;
-    background-color:rgb(25, 25, 25) ;
+    padding-top: 150px;
+    padding-bottom: 200px;
+    background-color: #FE4A49;
+    
 }
 .div{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 450px;
-    background-color: rgb(255, 255, 255);
+    background-color:rgb(25, 25, 25) ;
     transition: 0.3s;
 }
 .div .countainer3 img{
@@ -27,25 +29,64 @@
 
 .div .countainer1 img{
     margin-top: 0px;
-    width: 550px;
+    
+    width: 500px;
     transition: 0.3s;
 }
 
 .NameContainer{
+    color: white;
     display: inline-block;
     margin-right: 50px;
     margin-bottom: 0;
+}
+.NameContainer p {
+    color: #FE4A49;
+    font-weight: 100;
 }
 .AudioContainer{
     margin-left: 50px;
     display: inline-block;
 }
-.Title h2{
+.Title h3{
+    color:#FE4A49 ;
     margin-bottom: 20px;
     display: flex;
-    justify-content: center;
+    
 }
+
+.portTitles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.portTitles p{
+    font-size: 20px;
+    font-weight: 100;
+    color: #000000;
+}
+
+.portTitles h2{
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+}
+
+.slides audio::-webkit-media-controls-play-button{
+    background-color:#FE4A49;
+    border-radius: 50px;
+}
+.slides audio::-webkit-media-controls-timeline{
+    
+    color:#FE4A49;
+    
+}
+
+
 .Title p{
+    color: white;
     margin-bottom: 30px;
 }
 
@@ -71,7 +112,7 @@
 }
 
 @media(max-width: 1250px){
-    .Title h2{
+    .Title h3{
         margin-bottom: 15px;
         font-size: 17px;
     }
@@ -96,4 +137,40 @@
         font-size: 12px;
         margin-right: 0px;
     }
+}
+@media (max-width: 1160px){
+    .Title h3{
+        justify-content: center;
+    }
+    .div .countainer3 img{
+       display: none;
+    }
+    .div .countainer1 img{
+        display: none;
+    } 
+}
+
+@media (max-width: 560px){
+    .div .countainer3 img{
+       display: none;
+    }
+    .div .countainer1 img{
+        display: none;
+    } 
+    .AudioContainer{
+        margin-left: 0px;
+        margin-right: 0px;
+        
+    }
+    .slides{
+        display: grid;
+    }
+    .NameContainer{
+        text-align: center;
+    }
+   
+    .div{
+        height: 500px
+    }
+ 
 }

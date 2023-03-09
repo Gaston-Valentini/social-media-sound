@@ -7,7 +7,12 @@ import Test from "../../Audios/test.mp3"
 
 export default function Portafolio(){
     return(
-            <div className="containerPort">
+            <div  className="containerPort">
+                            <div className="portTitles">
+                                    <p>Trabajos</p>   
+                                    <h2>Este es mi Portafolio</h2>
+                                    
+                            </div>
                 <div className="div">
                     <div className="countainer1">
                     <img  className="imgA" alt="mic" src={imgAuris}></img>
@@ -19,7 +24,7 @@ export default function Portafolio(){
                        <div className="Title">
   
                                     <div>
-                                    <h2>Trabajos Recientes</h2>
+                                    <h3>Trabajos Recientes</h3>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio repellat eum dolore, sint nemo harum fuga autem expedita, ea velit modi voluptas est. Fugit officiis nulla exercitationem eius aliquid labore.</p>   
                                     </div>
                                    
@@ -66,7 +71,7 @@ export default function Portafolio(){
                     <img alt="mic" src={imgMic}></img>
                     </div>
                 </div>
-
+                
             </div>
     )
 }
