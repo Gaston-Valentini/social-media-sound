@@ -4,7 +4,8 @@ import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 
 export default function Form() {
-    const [env,setEnv] = useState('false')
+    const [env,setEnv] = useState(true)
+    const [formEnv,setFormEnv] = useState(true)
 
     const [form ,setForm] = useState({
         name: "",
@@ -14,7 +15,16 @@ export default function Form() {
         url:""
     })
 
-   
+   useEffect(()=>{
+    if(!form.name && !form.lastName && !form.email){
+        setEnv(true)
+        setFormEnv(false)
+    }else if(!form.name || !form.lastName || !form.email ){
+        setEnv(false) 
+        setFormEnv(false)
+    }else{ setEnv(true)
+        setFormEnv(true)}
+   },[form])
 
     const handlechange = (e) =>{
         e.preventDefault();
@@ -22,23 +32,12 @@ export default function Form() {
         ...form,
         [e.target.id]:e.target.value
        })
-       if(!form.name || !form.lastName || !form.email || !form.num){
-        setEnv(false) }else setEnv(true)   
+         
     }
 
     const sendEmail = (e) =>{
      e.preventDefault();
-     if(form.name && form.lastName && form.email && form.num){
-        setEnv(true)
-
-        Swal.fire({
-   
-            icon: 'success',
-            title: 'Completar formulario correctamente',
-            showConfirmButton: false,
-            timer: 1500
-          })
-    }else{
+     
     emailjs.sendForm('service_fnoauoh','template_2yj0ek9',e.target,'BF5OYqOgU1b3qlpke')
     .then(resp => {
         Swal.fire({
@@ -54,7 +53,7 @@ export default function Form() {
         showConfirmButton: false,
         timer: 1500
       })})
-    }
+    
     }
 
     return(
@@ -99,9 +98,11 @@ export default function Form() {
                     <p>Acepto la Politicas de Privacidad</p>
                 </div>
                 <div className={env? "formNotErr" : "formError"}>
-                    <label>Completar correctamente el formulario</label>
+                    <label>Completar correctamente el formulario (campos obligatorios : Nombre,Apellido y Email)</label>
                 </div>
-                <button type={"submit"} className={"formSubmit"}>Enviar</button>
+                {formEnv ?<button type={"submit"} className={"formSubmit"}>Enviar</button>:
+                <label className={"formSubmitErr"}>Enviar</label>}
+                
             </form>
             
         </div>
