@@ -42,7 +42,7 @@ export default function Form() {
     .then(resp => {
         Swal.fire({
             icon: 'success',
-            title: 'Your work has been saved',
+            title: 'Formulario enviado Correctamente',
             showConfirmButton: false,
             timer: 1500
           })
@@ -53,7 +53,7 @@ export default function Form() {
         showConfirmButton: false,
         timer: 1500
       })})
-    
+     e.target.reset()
     }
 
     return(
