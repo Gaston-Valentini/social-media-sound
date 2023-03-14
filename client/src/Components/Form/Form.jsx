@@ -12,14 +12,17 @@ export default function Form() {
         lastName:"",
         email:"",
         num:"",
-        url:""
+        url:"",
     })
+    
+   
 
    useEffect(()=>{
+
     if(!form.name && !form.lastName && !form.email){
         setEnv(true)
         setFormEnv(false)
-    }else if(!form.name || !form.lastName || !form.email ){
+    }else if(!form.name || !form.lastName || !form.email){
         setEnv(false) 
         setFormEnv(false)
     }else{ setEnv(true)
@@ -28,16 +31,20 @@ export default function Form() {
 
     const handlechange = (e) =>{
         e.preventDefault();
+        console.log(e.target.id)
+       
        setForm({
         ...form,
         [e.target.id]:e.target.value
        })
+      
          
     }
 
     const sendEmail = (e) =>{
      e.preventDefault();
-     
+     let check = document.getElementById("politics")
+    if(check.checked){
     emailjs.sendForm('service_fnoauoh','template_2yj0ek9',e.target,'BF5OYqOgU1b3qlpke')
     .then(resp => {
         Swal.fire({
@@ -46,6 +53,13 @@ export default function Form() {
             showConfirmButton: false,
             timer: 1500
           })
+        setForm({
+            name: "",
+            lastName:"",
+            email:"",
+            num:"",
+            url:""
+         })
     })
     .catch(error => {Swal.fire({
         icon: 'error',
@@ -54,6 +68,14 @@ export default function Form() {
         timer: 1500
       })})
      e.target.reset()
+    }else{
+        Swal.fire({
+            icon: 'error',
+            title: 'Aceptar Politicas de Privacidad',
+            showConfirmButton: false,
+            timer: 1500
+          }) 
+    }
     }
 
     return(
@@ -90,11 +112,11 @@ export default function Form() {
                     <input name="user_archive" type="file" className={"formZoneFile"}></input>
                 </div> */}
                 <div className="formZone">
-                    <p className="formZoneTitle">¿Qieres sugerir o especificar algún tipo de audio?</p>
+                    <p className="formZoneTitle">¿Quieres sugerir o especificar algún tipo de audio?</p>
                     <textarea name="user_text"className={"formZoneTextarea"}></textarea>
                 </div>
                 <div className="formPolitics">
-                    <input type={"checkbox"} className={"formZoneCheckbox"}></input>
+                    <input value="politics" id="politics" type={"checkbox"} className={"formZoneCheckbox"}></input>
                     <p>Acepto la Politicas de Privacidad</p>
                 </div>
                 <div className={env? "formNotErr" : "formError"}>
